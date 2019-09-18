@@ -15,6 +15,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func clicouVerBandeiras(_ sender: UIButton) {
+        
+        if let viewController = self.storyboard?.instantiateViewController(withIdentifier: "BandeirasTabController") as? BandeirasTabController {
+            
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }
+        
+    }
+    
 }
 
